@@ -4,6 +4,13 @@ A machine learning project predicting outcomes of Liverpool's matches during the
 ## Project Overview
 This project aims to predict the outcomes of Liverpool's 2021-2022 Premier League matches using machine learning models. The main goal is to predict the number of goals Liverpool scores and concedes using match statistics, team data, and various features like shooting, possession, and defensive actions.
 
+The datasets used for the project can be found here: 
+
+- **Premier League Match Data (2021-2022 Season)**
+Source: [Kaggle](https://www.kaggle.com/datasets/saife245/english-premier-league)  
+- **Premier League Table & Squad Statistics from 2021-2022 season (squad shooting, possession, defensive actions)**
+Source: [Kaggle](https://www.kaggle.com/datasets/mechatronixs/20212022-season-england-premier-league-team-data)
+
 Two different machine learning models are used:
 - **Random Forest Regressor** for predicting Liverpool's goals.
 - **XGBoost Regressor** for predicting the opponent's goals.
