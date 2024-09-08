@@ -28,7 +28,7 @@ This file provides information about each team’s average possession percentage
 ### 6. `england_premier_league_squad_defensive_actions_22.csv`
 This file contains defensive stats such as total pressures, successful pressures, and clearances. It helps model the defensive capabilities of teams, contributing to the goal predictions.
 
-### 7. `premierleague_ml.py`
+### 7. `script.py`
 The main script that processes the datasets, trains the machine learning models, and makes predictions for each match. The script performs the following tasks:
 - Loads and merges all datasets.
 - Creates additional features like goals scored and conceded by Liverpool.
@@ -51,3 +51,40 @@ The main script that processes the datasets, trains the machine learning models,
 1. Install the necessary packages:
    ```bash
    pip install pandas scikit-learn xgboost numpy
+
+2. Ensure all the dataset files are in the same directory as premierleague_ml.py.
+
+3. Run the `script.py` script:
+`python script.py`
+
+4. The script will output the following:
+   - The Mean Squared Error (MSE) for both Liverpool's predicted goals and opponent goals.
+   - The actual and predicted score for each Liverpool match in the 2021-2022 Premier League season.
+
+## Analysis of the Project
+
+# Model Performance
+MSE for Liverpool's predicted goals: 0.4474
+MSE for opponent's predicted goals: 0.2368
+
+The models provide reasonable accuracy, especially in predicting the opponent's goals, but there is still room for improvement in predicting Liverpool's goal tally.
+
+# Key Observations
+- The models were able to capture many match outcomes accurately, including both low-scoring and high-scoring matches.
+- The Random Forest model seems to slightly under-predict Liverpool’s goals, especially in matches with a high number of goals (e.g., 4 or more).
+
+## Areas for Improvement
+
+# 1. Feature Engineering
+- Incorporating additional features like home/away team form (e.g., last 5 matches), injury/suspension records, or tactical changes could improve the model's predictive power.
+- Using a time-series model (e.g., LSTM) to capture the progression of team performance over the season.
+
+# 2. Data Augmentation
+- Additional seasons of data or more detailed match statistics could be integrated to provide a broader context for predictions.
+- Introducing expected goals (xG) per player or incorporating squad rotation dynamics may enhance predictions.
+  
+# 3. Ensemble Learning
+Using ensemble methods that combine multiple models (e.g., stacking, boosting) might improve overall prediction accuracy.
+
+# Conclusion
+The project demonstrates a successful attempt to predict Liverpool's Premier League match outcomes based on team statistics and match data. While the model performs reasonably well, incorporating additional data sources, refining features, and performing deeper analysis would further enhance the predictions' accuracy.
