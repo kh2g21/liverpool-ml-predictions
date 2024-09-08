@@ -6,10 +6,8 @@ This project aims to predict the outcomes of Liverpool's 2021-2022 Premier Leagu
 
 The datasets used for the project can be found here: 
 
-- **Premier League Match Data (2021-2022 Season)**
-Source: [Kaggle](https://www.kaggle.com/datasets/saife245/english-premier-league)  
-- **Premier League Table & Squad Statistics from 2021-2022 season (squad shooting, possession, defensive actions)**
-Source: [Kaggle](https://www.kaggle.com/datasets/mechatronixs/20212022-season-england-premier-league-team-data)
+- **Premier League Match Data (2021-2022 Season)** [Kaggle](https://www.kaggle.com/datasets/saife245/english-premier-league)  
+- **Premier League Table & Squad Statistics from 2021-2022 season (squad shooting, possession, defensive actions)** [Kaggle](https://www.kaggle.com/datasets/mechatronixs/20212022-season-england-premier-league-team-data)
 
 Two different machine learning models are used:
 - **Random Forest Regressor** for predicting Liverpool's goals.
