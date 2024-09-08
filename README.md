@@ -52,7 +52,7 @@ The main script that processes the datasets, trains the machine learning models,
    ```bash
    pip install pandas scikit-learn xgboost numpy
 
-2. Ensure all the dataset files are in the same directory as premierleague_ml.py.
+2. Ensure all the dataset files are in the same directory as script.py.
 
 3. Run the `script.py` script:
 `python script.py`
