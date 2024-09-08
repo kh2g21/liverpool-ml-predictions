@@ -63,28 +63,28 @@ The main script that processes the datasets, trains the machine learning models,
 
 ## Analysis of the Project
 
-# Model Performance
+### Model Performance
 MSE for Liverpool's predicted goals: 0.4474
 MSE for opponent's predicted goals: 0.2368
 
 The models provide reasonable accuracy, especially in predicting the opponent's goals, but there is still room for improvement in predicting Liverpool's goal tally.
 
-# Key Observations
+### Key Observations
 - The models were able to capture many match outcomes accurately, including both low-scoring and high-scoring matches.
 - The Random Forest model seems to slightly under-predict Liverpool’s goals, especially in matches with a high number of goals (e.g., 4 or more).
 
 ## Areas for Improvement
 
-# 1. Feature Engineering
+### 1. Feature Engineering
 - Incorporating additional features like home/away team form (e.g., last 5 matches), injury/suspension records, or tactical changes could improve the model's predictive power.
 - Using a time-series model (e.g., LSTM) to capture the progression of team performance over the season.
 
-# 2. Data Augmentation
+### 2. Data Augmentation
 - Additional seasons of data or more detailed match statistics could be integrated to provide a broader context for predictions.
 - Introducing expected goals (xG) per player or incorporating squad rotation dynamics may enhance predictions.
   
-# 3. Ensemble Learning
+### 3. Ensemble Learning
 Using ensemble methods that combine multiple models (e.g., stacking, boosting) might improve overall prediction accuracy.
 
-# Conclusion
+## Conclusion
 The project demonstrates a successful attempt to predict Liverpool's Premier League match outcomes based on team statistics and match data. While the model performs reasonably well, incorporating additional data sources, refining features, and performing deeper analysis would further enhance the predictions' accuracy.
